@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/createNewProject.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <title>New Project</title>
+  </head>
+  <body>
+    <main class="main-wrapper">
+      <form class="form-wrapper" action="/sumbit" method="POST">
+        <div class="field-container">
+          <label for="project-name">Project Name</label>
+          <input
+            type="text"
+            name="project-name"
+            id="project-name"
+            placeholder="Enter project name"
+            required
+          />
+        </div>
+
+        <div class="field-container">
+          <label for="project-genre">Project Genre</label>
+          <input
+            type="text"
+            name="project-genre"
+            id="project-genre"
+            placeholder="Enter project genre. Ex: Python"
+          />
+        </div>
+
+        <div class="field-container">
+          <label for="project-nature">Professional/Private</label>
+          <select name="Professional/Private" id="project-nature">
+            <option value="private">Private</option>
+            <option value="professional">professional</option>
+          </select>
+        </div>
+
+        <div class="button-container">
+          <button class="create-button" type="submit">Create</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

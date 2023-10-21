@@ -1,0 +1,62 @@
+:root {
+    --header-backgroundcolor: plum;
+    --header-color: plum;
+}
+
+.header-wrapper {
+    background-color: var(--header-backgroundcolor);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    height: 100vh;
+}
+
+.side-menu-container {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1rem;
+}
+
+.center-wrapper {
+    grid-column: span 8;
+
+    padding: 1rem;
+}
+
+.center-container {
+    border: 1px solid black;
+
+    margin-bottom: 1rem;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    grid-column: span 1;
+}
+
+
+.right-nav-wrapper {
+    grid-column: span 2;
+}
+
+
+.footer-wrapper {
+    background-color: var(--header-backgroundcolor);
+
+    padding: 1rem;
+}
